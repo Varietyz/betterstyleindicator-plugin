@@ -48,9 +48,9 @@ import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
-import static net.runelite.client.plugins.betterstyleindicator.AttackStyle.DEFENSIVE;
-import static net.runelite.client.plugins.betterstyleindicator.AttackStyle.DEFENSIVE_CASTING;
-import static net.runelite.client.plugins.betterstyleindicator.AttackStyle.OTHER;
+import static com.betterstyleindicator.AttackStyle.DEFENSIVE;
+import static com.betterstyleindicator.AttackStyle.DEFENSIVE_CASTING;
+import static com.betterstyleindicator.AttackStyle.OTHER;
 import net.runelite.client.ui.overlay.OverlayManager;
 
 @PluginDescriptor(
