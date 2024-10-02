@@ -16,7 +16,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-import net.runelite.client.plugins.betterstyleindicator.src.main.java.com.betterstyleindicator.BetterStyleIndicatorConfig.SoundOption;
+import net.runelite.client.plugins.betterstyleindicator.BetterStyleIndicatorConfig.SoundOption;
 
 
 import static net.runelite.api.MenuAction.RUNELITE_OVERLAY_CONFIG;
