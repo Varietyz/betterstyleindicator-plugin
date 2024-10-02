@@ -1,4 +1,4 @@
-package com.betterstyleindicator;
+package com.stylealert;
 
 /*
  * Copyright (c) 2017, honeyhoney <https://github.com/honeyhoney>

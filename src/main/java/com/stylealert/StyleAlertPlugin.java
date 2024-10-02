@@ -22,7 +22,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.betterstyleindicator;
+package com.stylealert;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.HashBasedTable;
@@ -48,17 +48,17 @@ import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
-import static com.betterstyleindicator.AttackStyle.DEFENSIVE;
-import static com.betterstyleindicator.AttackStyle.DEFENSIVE_CASTING;
-import static com.betterstyleindicator.AttackStyle.OTHER;
+import static com.stylealert.AttackStyle.DEFENSIVE;
+import static com.stylealert.AttackStyle.DEFENSIVE_CASTING;
+import static com.stylealert.AttackStyle.OTHER;
 import net.runelite.client.ui.overlay.OverlayManager;
 
 @PluginDescriptor(
-	name = "Better Style Indicator",
-	description = "Add full screen flashing when a warned style gets toggled.",
-	tags = {"combat", "defence", "magic", "overlay", "ranged", "strength", "warn", "pure", "screen", "flash"}
+	name = "Style Alert",
+	description = "Add fullscreen flashing when a warned style gets toggled.",
+	tags = {"combat", "defence", "magic", "overlay", "ranged", "strength", "warn", "pure", "screen", "flash", "helper", "indicator"}
 )
-public class BetterStyleIndicatorPlugin extends Plugin
+public class StyleAlertPlugin extends Plugin
 {
 	private int equippedWeaponTypeVarbit = -1;
 	private AttackStyle attackStyle;
@@ -74,7 +74,7 @@ public class BetterStyleIndicatorPlugin extends Plugin
 	private ClientThread clientThread;
 
 	@Inject
-	private BetterStyleIndicatorConfig config;
+	private StyleAlertConfig config;
 
 	@Inject
 	private OverlayManager overlayManager;
@@ -84,9 +84,9 @@ public class BetterStyleIndicatorPlugin extends Plugin
 	private ScreenFlashOverlay flashOverlay; // Added this line
 
 	@Provides
-	BetterStyleIndicatorConfig provideConfig(ConfigManager configManager)
+	StyleAlertConfig provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(BetterStyleIndicatorConfig.class);
+		return configManager.getConfig(StyleAlertConfig.class);
 	}
 
 	@Override

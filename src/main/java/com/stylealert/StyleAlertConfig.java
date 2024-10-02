@@ -22,7 +22,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.betterstyleindicator;
+package com.stylealert;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
@@ -31,7 +31,7 @@ import net.runelite.client.config.ConfigItem;
 import java.awt.*;
 
 @ConfigGroup("attackIndicator")
-public interface BetterStyleIndicatorConfig extends Config
+public interface StyleAlertConfig extends Config
 {
 	@ConfigItem(
 			keyName = "enableFlashing",

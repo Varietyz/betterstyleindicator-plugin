@@ -1,4 +1,4 @@
-package com.betterstyleindicator;
+package com.stylealert;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,11 +12,10 @@ import net.runelite.api.Client;
 import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayPosition;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.betterstyleindicator.BetterStyleIndicatorConfig.SoundOption;
+import com.stylealert.StyleAlertConfig.SoundOption;
 
 
 import static net.runelite.api.MenuAction.RUNELITE_OVERLAY_CONFIG;
@@ -24,15 +23,15 @@ import static net.runelite.client.ui.overlay.OverlayManager.OPTION_CONFIGURE;
 
 class ScreenFlashOverlay extends Overlay
 {
-	private final BetterStyleIndicatorPlugin plugin;
-	private final BetterStyleIndicatorConfig config;
+	private final StyleAlertPlugin plugin;
+	private final StyleAlertConfig config;
 	private final Client client; // Inject the Client object
 
 	private boolean flashActive = false; // Is the screen flashing right now?
 	private Timer flashTimer; // Timer for toggling the flash state
 
 	@Inject
-	private ScreenFlashOverlay(BetterStyleIndicatorPlugin plugin, BetterStyleIndicatorConfig config, Client client)
+	private ScreenFlashOverlay(StyleAlertPlugin plugin, StyleAlertConfig config, Client client)
 	{
 		this.plugin = plugin;
 		this.config = config; // Initialize the config object
