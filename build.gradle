@@ -1,3 +1,5 @@
+package net.runelite.client.plugins.betterstyleindicator
+
 plugins {
 	id 'java'
 }
@@ -26,7 +28,7 @@ dependencies {
 	testImplementation group: 'net.runelite', name:'jshell', version: runeLiteVersion
 }
 
-group = 'com.example'
+group = 'com.betterstyleindicator'
 version = '1.0-SNAPSHOT'
 
 tasks.withType(JavaCompile) {
