@@ -1,4 +1,5 @@
 /*
+ * Copyright (c) 2024, Smoke (Smoked today) <https://github.com/Varietyz>
  * Copyright (c) 2017, honeyhoney <https://github.com/honeyhoney>
  * All rights reserved.
  *
