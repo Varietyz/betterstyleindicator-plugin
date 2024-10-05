@@ -222,8 +222,16 @@ public class StyleAlertPlugin extends Plugin
 		int weaponStyleEnum = client.getEnum(EnumID.WEAPON_STYLES).getIntValue(weaponType);
 		if (weaponStyleEnum == -1)
 		{
+				// Blue moon spear
+			if (weaponType == 22)
+			{
+				return new AttackStyle[]{
+					AttackStyle.ACCURATE, AttackStyle.AGGRESSIVE, null, DEFENSIVE, CASTING, DEFENSIVE_CASTING
+				};
+			}
 			if (weaponType == 30)
 			{
+				
 				// Partisan
 				return new AttackStyle[]{
 					AttackStyle.ACCURATE, AttackStyle.AGGRESSIVE, AttackStyle.AGGRESSIVE, DEFENSIVE
