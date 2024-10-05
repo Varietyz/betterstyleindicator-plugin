@@ -49,6 +49,7 @@ import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
+import static com.stylealert.AttackStyle.CASTING;
 import static com.stylealert.AttackStyle.DEFENSIVE;
 import static com.stylealert.AttackStyle.DEFENSIVE_CASTING;
 import static com.stylealert.AttackStyle.OTHER;
